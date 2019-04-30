@@ -1,0 +1,336 @@
+/*****************************************************************************
+* Overrides
+******************************************************************************/
+body
+{
+  font-family:Century Gothic, Helvettica, sans-serif; 
+   background-color:#fff;
+   font-size:13px;
+   padding:0px; margin:0px;
+    color: #252b2c;
+}
+
+.clearfix:after         { content: ".";display: block;clear: both;visibility: hidden;line-height: 0;height: 0;}
+.clearfix               { display: inline-block;}
+html[xmlns] .clearfix   { display: block;}
+* html .clearfix        { height: 1%;}
+img {border:0px;}
+h1  {color:#333; font-size:2em; font-weight:normal;margin:0px; margin-bottom:8px; }
+h2  {color:#333; font-size:1.5em; font-weight:normal; margin:0px 0px 4px 0px;}
+h3  {color:#333; font-size:1.8em; margin:8px 0px; font-weight:normal;}
+h4  {color:#333; font-size:1.3em; margin:8px 0px; font-weight:normal;}
+
+/*****************************************************************************
+* Layout
+******************************************************************************/
+.container
+{
+     width:976px;
+     margin:0 auto;
+     position:relative;
+}
+
+div.column { float:left; margin-right:16px;}
+div.endcolumn { float:left; margin-right:0px; }
+div.halfcol 
+{
+    width:480px;
+}
+div.thirdcol 
+{
+    width:304px;
+  display:block;
+}
+div.midthirdcol 
+{
+    width:336px;
+}
+div.twothirdcol 
+{
+    width:656px;
+}
+div.quartercol 
+{
+    width:200px;
+}
+
+div.thirdcol .sidecontent {position:absolute; bottom:50px; color:#333333;}
+
+div.fixedheight {height:350px; overflow-y:auto; border:0px;outline: none;}
+
+/*****************************************************************************
+* Header
+******************************************************************************/
+#header
+{
+  position: relative;
+  margin:8px auto;
+}
+
+#logo
+{
+    width: 119px; height: 90px;
+    display:block; text-indent:-1000px;
+    overflow:hidden;
+    border: none;
+    float:right;
+    background:url("../images/logo.gif") no-repeat top right;
+}
+
+#socialmedia { margin: 0px;padding: 0px;font-weight: bold; }
+#socialmedia li { float: left;background: url("../images/div.gif") no-repeat top right;list-style: none;line-height: 25px;padding: 0px 4px; }
+#socialmedia li.last, #socialmedia li.intro  { background: none; }
+#socialmedia a { width: 25px;height: 25px; display:block; text-indent:-1000px; overflow:hidden; }
+#socialmedia a.facebook { background: url("../images/sprite.gif") no-repeat; }
+#socialmedia a.twitter  { background: url("../images/sprite.gif") no-repeat -25px 0px; }
+
+.twittertitle {background: url("../images/twitter.gif") no-repeat; padding-left:25px;}
+
+#navigation {
+  height:120px;
+}
+#navigation ul  { padding:0; margin:0px; position: relative; width:50%; }
+
+#navigation ul li 
+{
+    list-style:none;
+}
+
+#navigation ul li.hover,
+#navigation ul li:hover {
+ position: relative;
+ z-index: 599;
+ cursor: default;
+}
+
+#navigation ul li a 
+{
+  display:block;
+  color:#999;
+  text-decoration:none; 
+  font-size:13px;
+  padding-bottom:4px;  
+  width:80px;
+  font-weight:bold;
+  text-transform: lowercase;
+}
+
+#navigation ul li.selected a, #navigation ul li a:hover
+{ color:#be1d00;}
+
+#navigation ul li ul {
+ position: absolute;
+ background: #fff;
+ width: 100px;
+ left: 80px; top: 0px;
+ margin:0px; 
+ padding:0px 4px;
+ visibility: hidden;
+}
+
+#navigation ul li ul li a {color:#a0a0a0 !important;}
+#navigation ul li ul li.selected a,#navigation ul li ul li a:hover
+{ color:#be1d00!important;} 
+
+#navigation ul li:hover > ul, #navigation ul li.selected > ul {
+ visibility: visible;
+}
+
+#searchform {
+    position: absolute;
+    top: 10px;right: 0px;
+    z-index: 100;
+}
+
+#searchform input {
+    border: 1px solid #a0a0a0;
+    height: 18px;
+    margin-top: 4px;
+    background: url("../images/sprite.gif") #fff -100px -2px no-repeat;
+    padding-left: 24px;
+    font-size: 13px;
+    width: 100px;
+}
+
+/*****************************************************************************
+* Footer
+******************************************************************************/
+#footer
+{
+    border-top:1px solid #ccc;
+    padding:5px 0px;
+}
+.disclaimer { font-weight: bold; color:#999;}
+
+ul#footernav
+{
+    padding:0; margin:0;position:absolute; right:0px; top:5px;
+}
+
+ul#footernav li         {list-style:none; border-right:1px solid #ccc; float:left;padding: 0px 4px;}
+ul#footernav li.last    {border: 0;}
+ul#footernav li a       {color:#999;font-weight:bold;text-decoration:none; font-size:0.9em;}
+ul#footernav li a:hover {color:#be1d00;text-decoration:underline;}
+
+/*****************************************************************************
+* Content
+******************************************************************************/
+.map {width:380px; height:350px;}
+.map_london .map {
+   float:right; 
+}
+
+#contact_edinburgh_details {
+  position: absolute;
+  top: 0px;
+  left: 390px;
+}
+
+
+
+.contact_email {
+  font-size:13px;
+}
+
+span.contact_email, #contact_edinburgh_details h2, #contact_london_details h2 {
+  color: #cc3300; 
+}
+
+.contentrow { margin-bottom:8px;}
+a.lightbox  {outline: none;}
+#content a:active   {color:#333;text-decoration:none;}
+#content a:link     {color:#333;text-decoration:none;}
+#content a          {color:#333;text-decoration:none;}
+#content a:visited  {color:#333;text-decoration:none;}
+#content a:hover    {color:#cc3300;text-decoration:underline;}
+
+#content .links {padding:0px; margin:0px;}
+#content .links li { padding-left: 10px; background: url("../images/cross.gif") 0 .5em no-repeat; list-style:none;}
+#content .links li a {color:#cc3300; font-weight:bold;}
+
+.portfoliopage p {margin-bottom:0px;}
+
+dl dt { font-weight:bold; color: #25415e;}
+dl dd { margin: 0px 0px 4px 0px;}
+
+.button {
+    color: #fff;
+    background: #58554f;
+    border: 0px;
+    border-radius: 0.2em;
+    padding: 4px 8px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    cursor: pointer;
+}
+
+#content #sitemap a {color:#000;}
+
+ul.thumb-gallery {margin:0px; padding:0px;}
+ul.thumb-gallery li {list-style:none; float:left;margin-right:16px; margin-bottom:16px; width:232px; height:122px; overflow:hidden; }
+ul.thumb-gallery li.end { margin-right:0px;}
+
+ul.staffimages {margin:0px; padding:0px;}
+ul.staffimages li {list-style:none; float:left;margin-right:5px; margin-bottom:5px; width:155px; overflow:hidden; display:block; height:155px; }
+ul.staffimages li a { opacity:0.5; }
+ul.staffimages li a:hover, ul.staffimages li.selected a {opacity:1; }
+
+ul#extra-thumbs {float:right; margin:0px; padding:0px; margin:0px; width:306px;}
+ul#extra-thumbs li {list-style:none; float:left; padding:0px; margin-right:6px; margin-bottom:6px;}
+ul#extra-thumbs li.end {margin-right:0px;}
+ul#extra-thumbs li a {display:block;  }
+ul#extra-thumbs li a { opacity:0.5; }
+ul#extra-thumbs li a:hover, ul#extra-thumbs li.selected a {opacity:1; }
+
+.tweet img {display:none;}
+
+/*****************************************************************************
+* Homepage
+******************************************************************************/
+#homepageslider
+{
+  height:350px;
+  margin-bottom:8px;
+}
+
+#homepageslider .frame
+{
+   width:976px;
+   height:350px;
+     margin:0 auto;
+  overflow:hidden;
+}
+
+.promo-panel .info {
+  background:#333;
+  position:absolute;
+  margin-top:-50px;
+  width: 610px;
+  padding-left:16px;
+}
+.promo-panel .info h2  {width:100px; float:left; margin-right:16px;}
+.promo-panel .info h2 a {text-decoration:none; color:white;}
+.promo-panel .info p {float:left; width:485px; color:#999;}
+.promo-panel .info p a {float:right; color:#fff; text-decoration:none;}
+.homepagelinks .thirdcol {width:314px;}
+
+
+/*****************************************************************************
+* Portfolio
+******************************************************************************/
+
+.columncontent {text-align:justify;}
+
+/*General Mosaic Styles*/
+.mosaic-block {
+  position:relative;
+  overflow:hidden;
+}
+
+.mosaic-block a {color:#000; text-decoration:none !important;}
+
+  .mosaic-backdrop {
+    display:none;
+    position:absolute;
+    top:0;
+    height:100%;
+    width:100%;
+    background:#fff;
+  }
+  
+  .mosaic-overlay {
+    display:none;
+    z-index:5;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#fff;
+  padding:2px;
+  }
+
+    .bar .mosaic-overlay {
+      bottom:-100px;
+      height:40px;
+      
+    opacity:0.8;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+      filter:alpha(opacity=80);
+      background:#fff;
+    }
+
+  .fade .mosaic-overlay {
+      opacity:0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+      filter:alpha(opacity=00);
+      background:#fff;
+    }
+
+
+
+
+
+
+
+
+/* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
