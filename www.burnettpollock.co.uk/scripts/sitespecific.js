@@ -14,7 +14,7 @@ if (!lib) { var lib = {}; }
 /************************************************************************
 * Object
 *************************************************************************/
-lib.BPA= function () {
+lib.BPA = function () {
     var self = this;
     this.debugErrors = false;
 
@@ -55,31 +55,31 @@ lib.BPA= function () {
         $('#search').blur(function (event) {
             if ($(this).val() == "") $(this).val("Search");
         });
-      
-      $('.nolink').click(function (event) {
-         event.preventDefault();
-      });
 
-        $(".lightbox").colorbox({ rel: 'lightbox', photo:'true' });
-      
-        $('.showthumb').click(function(event) {
+        $('.nolink').click(function (event) {
+            event.preventDefault();
+        });
+
+        $(".lightbox").colorbox({ rel: 'lightbox', photo: 'true' });
+
+        $('.showthumb').click(function (event) {
             event.preventDefault();
             $('.showthumb').parent().removeClass('selected');
             $(this).parent().addClass('selected');
             //$('.largelink').attr('href',$(this).attr('href'));
-            $('.largethumb').attr('src',($(this).attr('href')) + '&width=656&constrain=true');
+            $('.largethumb').attr('src', ($(this).attr('href')));
         });
-      
-      $('.fixedheight').jScrollPane({ hideFocus: true});
-      
-      $('.mosaic-block').mosaic({
-         animation  :  'slide'    //fade or slide
+
+        $('.fixedheight').jScrollPane({ hideFocus: true });
+
+        $('.mosaic-block').mosaic({
+            animation: 'slide'    //fade or slide
         });
-      
-      $('.newsitem a').click(function(e) {
-         $('.newsimage').attr('src',$(this).attr('rel'));
-         e.preventDefault();
-      });
+
+        $('.newsitem a').click(function (e) {
+            $('.newsimage').attr('src', $(this).attr('rel'));
+            e.preventDefault();
+        });
 
     };
 
@@ -106,15 +106,15 @@ lib.BPA= function () {
 /************************************************************************
 * Dropdown function
 *************************************************************************/
-$.fn.dropdown = function() {
+$.fn.dropdown = function () {
 
-    return this.each(function() {
+    return this.each(function () {
 
-        $(this).hover(function() {
+        $(this).hover(function () {
             $(this).addClass("hover");
             $('> .dir', this).addClass("open");
             $('ul:first', this).css('visibility', 'visible');
-        }, function() {
+        }, function () {
             $(this).removeClass("hover");
             $('.open', this).removeClass("open");
             $('ul:first', this).css('visibility', 'hidden');

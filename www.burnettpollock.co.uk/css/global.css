@@ -245,6 +245,9 @@ ul#extra-thumbs li a:hover, ul#extra-thumbs li.selected a {opacity:1; }
 
 .tweet img {display:none;}
 
+.largethumb {
+  max-width: 656px; 
+}
 /*****************************************************************************
 * Homepage
 ******************************************************************************/
