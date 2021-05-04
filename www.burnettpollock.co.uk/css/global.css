@@ -51,7 +51,7 @@ h3 {
 }
 h4 {
   color: #333;
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin: 8px 0px;
   font-weight: normal;
 }
@@ -511,6 +511,7 @@ ul#extra-thumbs li.selected a {
 .mosaic-block a {
   color: #000;
   text-decoration: none !important;
+  text-align: center;
 }
 
 .mosaic-backdrop {
