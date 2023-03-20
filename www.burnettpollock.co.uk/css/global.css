@@ -551,3 +551,14 @@ ul#extra-thumbs li.selected a {
 }
 
 /* EDITOR PROPERTIES - PLEASE DON'T DELETE THIS LINE TO AVOID DUPLICATE PROPERTIES */
+
+#logos {
+  position: absolute;
+  right: 0px;
+  top: 30px;
+}
+
+#logos img {
+  width: 100px; 
+  margin-right: 10px;
+}
